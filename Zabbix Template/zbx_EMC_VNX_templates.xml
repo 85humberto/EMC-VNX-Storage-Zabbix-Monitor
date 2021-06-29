@@ -4,17 +4,17 @@
     <date>2019-12-24T07:35:03Z</date>
     <groups>
         <group>
-            <name>存储监控</name>
+            <name>Storage</name>
         </group>
     </groups>
     <templates>
         <template>
             <template>EMC VNX Monitor</template>
-            <name>EMC VNX存储监控</name>
+            <name>EMC VNX Monitoramento de armazenamento</name>
             <description/>
             <groups>
                 <group>
-                    <name>存储监控</name>
+                    <name>Storage</name>
                 </group>
             </groups>
             <applications>
@@ -329,7 +329,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#CPUNAME}].regexp(Present)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储CPU状态异常</name>
+                            <name>O status da CPU de armazenamento EMC é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -464,7 +464,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#DIMMNAME}].regexp(Present)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储内存状态异常</name>
+                            <name>O status da memória de armazenamento EMC é anormal </name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -538,7 +538,7 @@
                         </conditions>
                     </filter>
                     <lifetime>30d</lifetime>
-                    <description>VNX自动发现硬盘状态</description>
+                    <description>O VNX descobre automaticamente o status do disco rígido</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>{#DISKNAME} State</name>
@@ -606,7 +606,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#DISKNAME}].regexp(Enabled|Unbound|Hot Spare Ready)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储硬盘状态异常</name>
+                            <name>O status do disco rígido de armazenamento EMC é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -741,7 +741,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#IONAME}].regexp(Present)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储I/O模块状态异常</name>
+                            <name>O status do módulo de E / S de armazenamento EMC é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -808,7 +808,7 @@
                         <conditions/>
                     </filter>
                     <lifetime>30d</lifetime>
-                    <description>VNX自动发现链路控制器</description>
+                    <description>O VNX descobre automaticamente o controlador de link</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>{#LCCNAME}</name>
@@ -876,7 +876,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#LCCNAME}].regexp(Present)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储LCC(Link Controller Card)链路控制卡状态异常</name>
+                            <name>O status da placa de controle de link de armazenamento EMC LCC (Link Controller Card) é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -943,7 +943,7 @@
                         <conditions/>
                     </filter>
                     <lifetime>30d</lifetime>
-                    <description>VNX自动发现电源状态</description>
+                    <description>O VNX descobre automaticamente o status de energia</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>{#POWERNAME}</name>
@@ -1011,7 +1011,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#POWERNAME}].regexp(Present)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储电源模块状态异常</name>
+                            <name>O status do módulo de energia de armazenamento EMC é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -1078,7 +1078,7 @@
                         <conditions/>
                     </filter>
                     <lifetime>30d</lifetime>
-                    <description>VNX自动发现SPS Cable</description>
+                    <description>O VNX descobre automaticamente o cabo SPS</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>{#SPSCABLENAME}</name>
@@ -1146,7 +1146,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#SPSCABLENAME}].regexp(Valid)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储SPS电缆状态异常</name>
+                            <name>O status do cabo SPS de armazenamento EMC é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -1213,7 +1213,7 @@
                         <conditions/>
                     </filter>
                     <lifetime>30d</lifetime>
-                    <description>VNX自动发现Storage Power Supplies 电池</description>
+                    <description>O VNX descobre automaticamente baterias de fontes de alimentação de armazenamento</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>{#SPSNAME}</name>
@@ -1281,7 +1281,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#SPSNAME}].regexp(Present)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储SPS(Storage Power Supplies)电池状态异常</name>
+                            <name>O status da bateria EMC storage SPS (Storage Power Supplies) é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
@@ -1348,7 +1348,7 @@
                         <conditions/>
                     </filter>
                     <lifetime>30d</lifetime>
-                    <description>VNX自动发现控制器状态</description>
+                    <description>O VNX descobre automaticamente o status do controlador</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>{#SPNAME}</name>
@@ -1416,7 +1416,7 @@
                             <expression>{EMC VNX Monitor:emc.vnx.status[{#SPNAME}].regexp(Present)}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
-                            <name>EMC存储SP(Storage Processor)状态异常</name>
+                            <name>O status do EMC storage SP (Storage Processor) é anormal</name>
                             <correlation_mode>0</correlation_mode>
                             <correlation_tag/>
                             <url/>
