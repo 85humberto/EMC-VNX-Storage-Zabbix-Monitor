@@ -1,4 +1,3 @@
-# EMC-VNX-Storage-Zabbix-Monitor
-一套使用Navisphere命令行工具获取EMC VNX磁阵状态的监控脚本，可运用于Zabbix，可监控磁阵的CPU、DIMM、Disk、I/O、LCC、Power、SP、SPS、SPS Cable。
+Um conjunto de scripts de monitoramento que usa a ferramenta de linha de comando Navisphere para obter o status do array de disco EMC VNX pode ser usado no Zabbix para monitorar CPU, DIMM, disco, I / O, LCC, Power, SP, SPS, Cabo SPS da matriz de disco.
 
-使用方法及具体介绍参看：[http://www.icoder.top/blog/?p=926](http://www.icoder.top/blog/?p=926)
+Para uso e introdução específica, consulte: [http://www.icoder.top/blog/?p=926](http://www.icoder.top/blog/?p=926)
